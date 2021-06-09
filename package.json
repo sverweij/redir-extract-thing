@@ -1,0 +1,20 @@
+{
+  "name": "redir-extract-thing",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "extract redirects from an apache config & slap them in a csv",
+  "main": "src/httpd-to-csv.js",
+  "scripts": {
+    "build": "peggy -o src/httpd-parser.cjs src/httpd-parser.peggy",
+    "prettier": "prettier --write src/**/*.js"
+  },
+  "author": "Sander Verweij",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.3.1"
+  },
+  "dependencies": {
+    "peggy": "^1.2.0",
+    "get-stream": "^6.0.1"
+  }
+}

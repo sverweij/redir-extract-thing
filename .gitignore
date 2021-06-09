@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# prevent accidental commits of real-live configs (and any output)
+*.conf
+*.csv
